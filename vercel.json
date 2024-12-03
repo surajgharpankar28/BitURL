@@ -1,6 +1,6 @@
 {
     "functions": {
-      "@/app/api/*": {
+      "src/app/api/generate/route.js": {
         "maxDuration": 30
       }
     }
