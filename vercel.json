@@ -1,7 +1,8 @@
 {
-  "functions": {
-    "src/app/api/*": {
-      "maxDuration": 30
+    "functions": {
+      "/src/app/api/*": {
+        "maxDuration": 30
+      }
     }
   }
-}
+  
