@@ -2,12 +2,14 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid"; // Import uuid to generate unique IDs
+import { Copy } from "lucide-react";
 
 const Shortnr = () => {
   const [url, setUrl] = useState("");
   const [generatedURL, setGeneratedURL] = useState("");
   const [errorMessage, setErrorMessage] = useState(""); // State for error message
   const [loading, setLoading] = useState(false); // State for loading
+  const [copied, setCopied] = useState();
 
   const clear = () => {
     setUrl("");
@@ -136,11 +138,27 @@ const Shortnr = () => {
               <Link
                 href={generatedURL}
                 target="_blank"
-                className="bg-cyan-600 hover:bg-cyan-500 text-white py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+                className="bg-cyan-600 flex hover:bg-cyan-500 text-white py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
               >
                 {generatedURL}
               </Link>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(generatedURL);
+                  setCopied(true); // Show the copied message
+                  setTimeout(() => setCopied(false), 2000); // Hide after 2 seconds
+                }}
+                className=" text-white font-bold "
+              >
+                <Copy className="" />
+              </button>
             </div>
+            {/* Copy Notification */}
+            {copied && (
+              <p className="text-sm text-green-300 mt-2">
+                URL copied to clipboard!
+              </p>
+            )}
           </div>
         )}
       </div>
