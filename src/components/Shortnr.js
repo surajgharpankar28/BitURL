@@ -21,7 +21,7 @@ const Shortnr = () => {
       return; // Prevent the function from proceeding if the URL is empty
     }
 
-    const shorturl = uuidv4().split("-")[0]; // First part of the UUID
+    const shorturl = uuidv4().split("-")[0]; // Take only the first part of the UUID
 
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -91,7 +91,7 @@ const Shortnr = () => {
 
         {generatedURL && (
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 p-6 rounded-lg shadow-md text-white">
-            <h2 className="text-xl font-semibold mb-4">Your Short Link is:</h2>
+            <h2 className="text-2xl font-semibold mb-4">Your Short Link is:</h2>
             <div className="flex items-center gap-4">
               <Link
                 href={generatedURL}
