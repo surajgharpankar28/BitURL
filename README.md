@@ -3,7 +3,7 @@
 A simple web application to generate short, easy-to-share links from long URLs. Built with **Next.js**, it provides a seamless user experience with loading indicators, error validation, and a polished UI.
 
 ---
-### Live Demo - [BitURL](biturls.vercel.app)
+### Live Demo - [BitURL](https://biturls.vercel.app/)
 ---
 ## **Features**
 - **Real-time URL validation**: Ensures only valid URLs are accepted.
