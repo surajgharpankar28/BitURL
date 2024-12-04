@@ -97,21 +97,21 @@ const Shortnr = () => {
         )}
 
         {/* Loading indicator */}
-        {/* {loading && (
+        {loading && (
           <div className="flex justify-center mt-4">
             <div className="w-10 h-10 border-4 border-white border-t-teal-300 rounded-full animate-spin"></div>
           </div>
-        )} */}
+        )}
 
         {/* Loading indicator */}
-        {loading && (
+        {/* {loading && (
           <div className="relative mt-4 w-full h-2 bg-gray-200 rounded">
             <div
               className="absolute left-0 top-0 h-full bg-teal-500 rounded animate-pulse"
               style={{ width: "80%" }} // Simulating progress
             ></div>
           </div>
-        )}
+        )} */}
 
         <div className="mx-auto">
           <button
