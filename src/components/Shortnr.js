@@ -97,11 +97,6 @@ const Shortnr = () => {
         )}
 
         {/* Loading indicator */}
-        {loading && (
-          <div className="flex justify-center mt-4">
-            <div className="w-10 h-10 border-4 border-white border-t-teal-300 rounded-full animate-spin"></div>
-          </div>
-        )}
 
         {/* Loading indicator */}
         {/* {loading && (
@@ -127,6 +122,12 @@ const Shortnr = () => {
             Clear
           </button>
         </div>
+
+        {loading && (
+          <div className="flex justify-center mt-4">
+            <div className="w-10 h-10 border-4 border-white border-t-teal-300 rounded-full animate-spin"></div>
+          </div>
+        )}
 
         {generatedURL && !loading && (
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 p-6 rounded-lg shadow-md text-white">
