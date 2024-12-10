@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" type="image/png" href="/applogo.png" sizes="96x96" />
-        <title>ShortLinks | URL Shortener</title>
+        <title>BitURL | URL Shortener</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-blue-300 via-blue-400 to-teal-300`}
