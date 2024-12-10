@@ -3,7 +3,7 @@
 A simple web application to generate short, easy-to-share links from long URLs. Built with **Next.js**, it provides a seamless user experience with loading indicators, error validation, and a polished UI.
 
 ---
-### Live Demo - [BitURL](https://biturls.vercel.app/)
+### Live Demo - [BitURLs](https://biturls.vercel.app/)
 ---
 ## **Features**
 - **Real-time URL validation**: Ensures only valid URLs are accepted.
@@ -34,8 +34,8 @@ Ensure you have the following installed on your local machine:
 ### Installation
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/surajgharpankar28/BitURL.git
-   cd BitURL
+   git clone https://github.com/surajgharpankar28/BitURLs.git
+   cd BitURLs
    ```
 
 2. **Install dependencies**:
