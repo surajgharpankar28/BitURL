@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "BitURL | URL Shortner",
+  title: "BitURLs | URL Shortner",
   description:
     "ShortLinks makes it easy to shorten, share, and track your URLs with just a click.",
 };
