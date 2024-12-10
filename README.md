@@ -1,4 +1,4 @@
-# **BitURL - The URL Shortener**
+# **BitURLs - The URL Shortener**
 
 A simple web application to generate short, easy-to-share links from long URLs. Built with **Next.js**, it provides a seamless user experience with loading indicators, error validation, and a polished UI.
 
